@@ -1,5 +1,4 @@
 # Softgenix-Peru
-Compañía desarrolladora de software de alta calidad para una amplia gama de sectores desde pymes hasta empresas grandes.
 
 Softgenix es una empresa de desarrollo de software líder en la industria, dedicada a brindar soluciones innovadoras y personalizadas para sus clientes. Ofrecemos servicios completos de desarrollo de software, desde el análisis de requerimientos hasta la implementación y mantenimiento, y nos especializamos en diversas tecnologías y plataformas.
 
