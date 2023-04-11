@@ -11,7 +11,7 @@ Softgenix es una empresa de desarrollo de software líder en la industria, dedic
   <li>Ética: En Softgenix, nos esforzamos por ser una empresa ética y responsable. Cumplimos con todas las leyes y regulaciones aplicables, y nos aseguramos de actuar siempre con integridad y honestidad en todas nuestras interacciones con clientes y proveedores.</li>
 </ul>
 
-## Equipo de Trabajo G4
+## Equipo de Trabajo
 
 <ul>
   <li>Jefe de Proyecto:
