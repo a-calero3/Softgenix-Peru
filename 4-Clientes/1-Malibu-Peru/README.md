@@ -1,5 +1,4 @@
 # Gestion-de-Inventario-Tienda-Malibu PERU
-Proyecto de Gestion de la configuracion de software G4
 
 Se realizará la implementación de una plataforma web de control de inventarios que facilite el manejo de la información relacionada con los productos brindados y reduzca la carga del personal administrativo, así como también sirva como un catálogo de ventas para los clientes.
 
