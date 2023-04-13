@@ -26,6 +26,8 @@ BALTAZAR ALIAGA, Sebastián Pablo</li>
   <li>Tester QA:
 ANDÍA CUSI, Juan Vicente</li>
   <li>Administrador de Base de datos:
-CUELLO APAZA, Alexander Gabriel</li>
+<br>CUELLO APAZA, Alexander Gabriel<br>
+LANDEO CUENTAS, Sebastian Alonso
+  </li>
 </ul>
  
