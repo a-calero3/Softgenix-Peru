@@ -9,11 +9,18 @@ public class Cliente {
     static Scanner in = new Scanner(System.in);
     private int dni;
     private String nombre;
+    Direccion direccion;
 
     public Cliente() {}
     public Cliente(int dni, String nombre) {
         this.dni = dni;
         this.nombre = nombre;
+    }
+
+    public Cliente(int dni, String nombre, Direccion direccion) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.direccion = direccion;
     }
 
     public int getDni() {
