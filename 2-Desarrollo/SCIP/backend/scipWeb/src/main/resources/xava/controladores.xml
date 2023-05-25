@@ -5,11 +5,11 @@
 <controladores>
     
     <!-- Variable de entorno: 
-    <var-entorno nombre="scip-web_ANYO_DEFECTO" valor="2015"/>
+    <var-entorno nombre="inventario_ANYO_DEFECTO" valor="2015"/>
     -->
     
-    <!-- Objeto de sesiï¿½n:
-    <Objeto nombre="scip-web_anyoActivo" clase="java.lang.Integer" valor="2015" 
+    <!-- Objeto de sesión:
+    <Objeto nombre="inventario_anyoActivo" clase="java.lang.Integer" valor="2015" 
             ambito="global"/>
     -->
     

@@ -17,74 +17,74 @@
 	-->
 	 
 	<!-- HSQLDB -->   	
-    <Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="sa" password="" 
 	      driverClassName="org.hsqldb.jdbc.JDBCDriver"
 	      url="jdbc:hsqldb:hsql://localhost:1666"/>
 	      
 	<!-- MySQL       
-    <Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+    <Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="root" password="" 
 	      driverClassName="com.mysql.cj.jdbc.Driver"
-	      url="jdbc:mysql://localhost:3306/scip-webdb"/>	      
+	      url="jdbc:mysql://localhost:3306/inventariodb"/>	      
 	-->      
 	
 	<!-- PostgreSQL 
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="postgres" password="" 
 	      driverClassName="org.postgresql.Driver" 
-	      url="jdbc:postgresql://localhost/scip-webdb"/>
+	      url="jdbc:postgresql://localhost/inventariodb"/>
 	-->
 	
 	<!-- Oracle 
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="oracle.jdbc.OracleDriver"
-	      url="jdbc:oracle:thin:@localhost:1521:scip-webdb"/>
+	      url="jdbc:oracle:thin:@localhost:1521:inventariodb"/>
 	-->	
 	
 	<!-- AS/400 
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.ibm.as400.access.AS400JDBCDriver" 
-	      url="jdbc:as400:localhost/scip-weblib"/>
+	      url="jdbc:as400:localhost/inventariolib"/>
 	-->
 	
 	<!-- Microsoft SQL Server
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
-	      url="jdbc:sqlserver://localhost:1433;databaseName=scip-webdb"/>
+	      url="jdbc:sqlserver://localhost:1433;databaseName=inventariodb"/>
 	-->
 	
 	<!-- Informix
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.informix.jdbc.IfxDriver"
-	      url="jdbc:informix-sqli://localhost:1533/scip-webdb:INFORMIXSERVER=tuservidor"/>
+	      url="jdbc:informix-sqli://localhost:1533/inventariodb:INFORMIXSERVER=tuservidor"/>
 	-->            
 	
 	<!-- Db2
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="com.ibm.db2.jcc.DB2Driver"
-	      url="jdbc:db2://localhost:50000/scip-webdb"/>
+	      url="jdbc:db2://localhost:50000/inventariodb"/>
 	-->
 	
 	<!-- Firebird
-	<Resource name="jdbc/scip-webDS" auth="Container" type="javax.sql.DataSource"
+	<Resource name="jdbc/inventarioDS" auth="Container" type="javax.sql.DataSource"
 	      maxTotal="20" maxIdle="5" maxWaitMillis="10000"
 	      username="user" password="" 
 	      driverClassName="org.firebirdsql.jdbc.FBDriver"
-	      url="jdbc:firebirdsql://localhost:3050/c:/db/scip-web.fdb"/>
+	      url="jdbc:firebirdsql://localhost:3050/c:/db/inventario.fdb"/>
 	-->
 	                  	      
 </Context>
