@@ -145,7 +145,7 @@ public class ExcelTemplateUtil {
 		cell.setCellValue(value);
 		curColIndex++;
 	}
-	
+
 	public void replaceFind(Map<String, String> datas) {
 		if (datas == null)
 			return;
