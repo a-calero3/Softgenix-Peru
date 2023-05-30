@@ -11,7 +11,7 @@ body {
 .col-2 {
   position: absolute;
   top: 0px;
-  padding-bottom: 40%;
+  padding-bottom: 34%;
   text-indent: 30px;
   font-family: Helvetica;
   color: white;
@@ -20,4 +20,13 @@ body {
 
 .navbar-item {
   list-style: none;
+}
+
+.btn-group {
+  left: 16.5%;
+}
+
+.container {
+  position: relative;
+  left: 5%;
 }/*# sourceMappingURL=styles.css.map */

@@ -13,7 +13,7 @@ body{
 .col-2 {
     position: absolute;
     top: 0px;
-    padding-bottom: 40%;
+    padding-bottom: 34%;
     text-indent: 30px;
     font-family: $tipo-fuente;
     color: $color-fuente;
@@ -21,4 +21,11 @@ body{
 }
  .navbar-item{
     list-style: none;
+}
+.btn-group{
+    left: 16.5%;
+}
+.container{
+    position: relative;
+    left: 5%;
 }    
