@@ -1,0 +1,31 @@
+$color-fuente:white; 
+$tipo-fuente: Helvetica;
+$barra-lateral: #2850A7;
+body{
+    margin: 1px;
+}
+.col{
+    background-color : #3367d6 ;
+    color: $color-fuente;
+    text-align: end;
+    }
+
+.col-2 {
+    position: absolute;
+    top: 0px;
+    padding-bottom: 34%;
+    text-indent: 30px;
+    font-family: $tipo-fuente;
+    color: $color-fuente;
+    background-color: $barra-lateral;
+}
+ .navbar-item{
+    list-style: none;
+}
+.btn-group{
+    left: 16.5%;
+}
+.container{
+    position: relative;
+    left: 5%;
+}    
