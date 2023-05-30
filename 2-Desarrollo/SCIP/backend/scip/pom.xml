@@ -21,13 +21,18 @@
 			<artifactId>openxava</artifactId>
 			<version>${openxava.version}</version>
 		</dependency>
-		
-		<!-- 
-		Para acceder a tu base de datos descomenta la entrada correspondiente 
-		de las dependencias de abajo. Si no encuentras la tuya, busca en
-		internet por la dependencia maven para tu base de datos y añádela
-		aquí tu mismo.
-		-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-commons</artifactId>
+            <version>2.6.10-SNAPSHOT</version>
+        </dependency>
+
+        <!--
+        Para acceder a tu base de datos descomenta la entrada correspondiente
+        de las dependencias de abajo. Si no encuentras la tuya, busca en
+        internet por la dependencia maven para tu base de datos y añádela
+        aquí tu mismo.
+        -->
 		
 		<!-- MySQL 
 		<dependency>
