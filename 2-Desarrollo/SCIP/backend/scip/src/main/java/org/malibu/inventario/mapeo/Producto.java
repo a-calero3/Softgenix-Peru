@@ -1,7 +1,9 @@
 package org.malibu.inventario.mapeo;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Producto {
@@ -162,5 +164,18 @@ public class Producto {
         }while(opc!=5);
     }
 
-}
+    public void insertaProductos(List<Producto> p) {
+        Map<Integer, Producto> productos = new HashMap<>();
+        productos.put(1001, new Producto(1001, "Zapatilla CAT", BigDecimal.valueOf(560), "Zapatilla Cuero argentino", new Categoria("A123", "CALZADO")));
+        productos.put(1002, new Producto(1002, "Casaca Montalban", BigDecimal.valueOf(1090), "Casaca cuero peruano", new Categoria("B201", "CASACA")));
+        productos.put(1003, new Producto(1003, "Zapato BATA", BigDecimal.valueOf(400), "Zapato de vestir cuero negro", new Categoria("A124", "CALZADO")));
+        productos.put(1004, new Producto(1004, "Billetera GUESS", BigDecimal.valueOf(139), "Billetera color marron con bordado", new Categoria("C301", "BILLETERA")));
+        productos.put(1005, new Producto(1005, "Zapatillas BATA dx12", BigDecimal.valueOf(439), "Zapatillas marrones cuero argentino", new Categoria("A125", "CALZADO")));
+        productos.put(1006, new Producto(1006, "Mochila Nike 3kg", BigDecimal.valueOf(780), "Mochila con capacidad 3kilos marron", new Categoria("D004", "MOCHILA")));
+        productos.put(1007, new Producto(1007, "Billetera Tarjetero", BigDecimal.valueOf(189), "Billetera basica con monedero y tarjetero", new Categoria("C302", "BILLETERA")));
+        productos.put(1008, new Producto(1008, "Sandalias Talla 42", BigDecimal.valueOf(209), "Sandalias de cuero marron", new Categoria("A126", "CALZADO")));
+        p.addAll(productos.values());
+                                               }
+
+                    }
 
