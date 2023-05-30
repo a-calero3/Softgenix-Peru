@@ -177,6 +177,7 @@ public class Producto {
         p.addAll(productos.values());
                                                }
 
+
     public void buscarProducto(int cod, List<Producto>p) {
         insertaProductos(p);
         boolean band = false;
@@ -187,12 +188,16 @@ public class Producto {
 
         if(band == true) {
             System.out.println("SE ENCONTRO EL PRODUCTO");
+            mostrarProducto(cod,p);
         }else{
             System.out.println("NO SE ENCONTRO EL PRODUCTO");
-            }
+                }
+                                                                }
 
-    }
-
+    public void mostrarProducto(int cod, List<Producto>p){
+        System.out.println("\nCODIGO\tPRODUCTO\t\t\tOBSERVACIONES\t\t\tCATEGORIA");
+        p.stream().filter(s->s.getNumero()==cod).map(m->m.getNumero()+"\t"+m.getDescripcion()+"\t"+m.getObservaciones()+"\t"+m.getCategoria().getDescripcion()).forEach(System.out::println);
+                                                        }
 
                     }
 
