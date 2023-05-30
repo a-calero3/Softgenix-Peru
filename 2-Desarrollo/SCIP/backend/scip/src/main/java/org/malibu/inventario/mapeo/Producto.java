@@ -177,5 +177,22 @@ public class Producto {
         p.addAll(productos.values());
                                                }
 
+    public void buscarProducto(int cod, List<Producto>p) {
+        insertaProductos(p);
+        boolean band = false;
+
+        for(int i=0 ; i<p.size() ; i++){
+            if( cod == p.get(i).getNumero() ){ band = true;  }
+        }
+
+        if(band == true) {
+            System.out.println("SE ENCONTRO EL PRODUCTO");
+        }else{
+            System.out.println("NO SE ENCONTRO EL PRODUCTO");
+            }
+
+    }
+
+
                     }
 
