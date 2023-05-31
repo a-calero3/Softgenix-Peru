@@ -12,7 +12,8 @@ public class Test {
         Producto obj2 = new Producto();
        // List<Cliente> lista = new LinkedList<Cliente>();
         List<Producto> lista2 = new LinkedList<Producto>();
-        obj2.runTestProductos(lista2);
+        //obj2.runTestProductos(lista2);
+        obj2.buscarProducto(1004,lista2); //TEST PARA BUSCAR PRODUCTOS
 
                                             }
-}
+                }
