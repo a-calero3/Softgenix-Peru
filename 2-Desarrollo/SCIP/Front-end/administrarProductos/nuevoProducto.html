@@ -13,7 +13,7 @@
 <header class="col p-12">
     <ul class="nav justify-content-end">
         <li class="nav-item barra">
-            <a class="nav-link" href="#">Cerrar Sesión (Administrador)</a>
+            <a class="nav-link" href="../Login/Login.html">Cerrar Sesión (Administrador)</a>
         </li>
     </ul>
 </header>
@@ -28,7 +28,7 @@
         </button>
         <div class="dropdown-container">
             <a href="administrarProductos.html">Administrar Productos</a>
-            <a href="#buscarProducto">Buscar Producto</a>
+            <a href="../buscarProducto/buscarProducto.html">Buscar Producto</a>
             <a href="#alertasStock">Alertas de Stock</a>
             <a href="#listaProductos">Lista de Productos</a>
         </div>
@@ -36,7 +36,7 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
-            <a href="#generarReporte">Generar Reporte</a>
+            <a href="../generarReporteInventario/generarReporteInventarioForm.html">Generar Reporte</a>
             <a href="#reporteGrafico">Reporte Gráfico</a>
             <a href="#historialReporte">Historial de Reportes</a>
         </div>
@@ -75,31 +75,31 @@
             <div class="row mb-3">
                 <label for="nombreProducto" class="col-sm-3 col-form-label fw-bold gris-text">Nombre Producto</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control border border-dark-subtle" id="nombreProducto" required>
+                    <input type="text" class="form-control border border-dark-subtle" name="nombreProducto" id="nombreProducto" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="costoProducto" class="col-sm-3 col-form-label fw-bold gris-text">Costo</label>
                 <div class="col-sm-5">
-                    <input type="number" class="form-control border border-dark-subtle" id="costoProducto" required>
+                    <input type="number" class="form-control border border-dark-subtle" name="costoProducto" id="costoProducto" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="precioProducto" class="col-sm-3 col-form-label fw-bold gris-text">Precio</label>
                 <div class="col-sm-5">
-                    <input type="number" class="form-control border border-dark-subtle" id="precioProducto" required>
+                    <input type="number" class="form-control border border-dark-subtle" name="precioProducto" id="precioProducto" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="stockProducto" class="col-sm-3 col-form-label fw-bold gris-text">Stock</label>
                 <div class="col-sm-5">
-                    <input type="number" class="form-control border border-dark-subtle" id="stockProducto" required>
+                    <input type="number" class="form-control border border-dark-subtle" name="stockProducto" id="stockProducto" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="categoriaProducto" class="col-sm-3 col-form-label fw-bold gris-text">Categoria</label>
                 <div class="col-sm-9">
-                    <select class="form-select border border-dark-subtle" aria-label="Default select example" id="categoriaProducto">
+                    <select class="form-select border border-dark-subtle" aria-label="Default select example" name="categoriaProducto" id="categoriaProducto">
                         <option selected>Seleccione la categoria</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -110,7 +110,7 @@
             <div class="row mb-3">
                 <label for="proveedorProducto" class="col-sm-3 col-form-label fw-bold gris-text">Proveedor</label>
                 <div class="col-sm-9">
-                    <select class="form-select border border-dark-subtle" aria-label="Default select example" id="proveedorProducto">
+                    <select class="form-select border border-dark-subtle" aria-label="Default select example" name="proveedorProducto" id="proveedorProducto">
                         <option selected>Seleccione el proveedor</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -121,7 +121,7 @@
             <div class="row mb-3">
                 <label for="fotoProducto" class="col-sm-3 col-form-label fw-bold gris-text">Foto Producto</label>
                 <div class="col-sm-9">
-                    <input class="form-control border border-dark-subtle" type="file" id="fotoProducto">
+                    <input class="form-control border border-dark-subtle" type="file" name="fotoProducto" id="fotoProducto">
                 </div>
             </div>
             <br>
