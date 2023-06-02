@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo Producto</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header class="col p-12">
+    <ul class="nav justify-content-end">
+        <li class="nav-item barra">
+            <a class="nav-link" href="../Login/Login.html">Cerrar Sesión (Administrador)</a>
+        </li>
+    </ul>
+</header>
+
+<body>
+    <div class="sidenav">
+        <a class="fw-bold" href="#inventario">INVENTARIO</a>
+        <br>
+        <a href="#usuarios">Usuarios</a>
+        <button class="dropdown-btn">Productos 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="administrarProductos.html">Administrar Productos</a>
+            <a href="../buscarProducto/buscarProducto.html">Buscar Producto</a>
+            <a href="#alertasStock">Alertas de Stock</a>
+            <a href="#listaProductos">Lista de Productos</a>
+        </div>
+        <button class="dropdown-btn">Reportes 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../generarReporteInventario/generarReporteInventarioForm.html">Generar Reporte</a>
+            <a href="#reporteGrafico">Reporte Gráfico</a>
+            <a href="#historialReporte">Historial de Reportes</a>
+        </div>
+        <a href="#proveedores">Proveedores</a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary barranav" style="background-color: #d9d9d9;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="administrarProductos.html"><i class="fa fa-chevron-left"></i> Lista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="nuevoProducto.html"><i class="fa fa-plus-square-o"></i> Nuevo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-cloud-upload"></i> Grabar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-refresh"></i> Refrescar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-trash"></i> Eliminar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+
+        <h2 class="gris-text">Nuevo Producto</h2>
+        <br>
+        <form class="col-sm-6">
+            <div class="row mb-3">
+                <label for="nombreProducto" class="col-sm-3 col-form-label fw-bold gris-text">Nombre Producto</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control border border-dark-subtle" name="nombreProducto" id="nombreProducto" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="costoProducto" class="col-sm-3 col-form-label fw-bold gris-text">Costo</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control border border-dark-subtle" name="costoProducto" id="costoProducto" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="precioProducto" class="col-sm-3 col-form-label fw-bold gris-text">Precio</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control border border-dark-subtle" name="precioProducto" id="precioProducto" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="stockProducto" class="col-sm-3 col-form-label fw-bold gris-text">Stock</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control border border-dark-subtle" name="stockProducto" id="stockProducto" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="categoriaProducto" class="col-sm-3 col-form-label fw-bold gris-text">Categoria</label>
+                <div class="col-sm-9">
+                    <select class="form-select border border-dark-subtle" aria-label="Default select example" name="categoriaProducto" id="categoriaProducto">
+                        <option selected>Seleccione la categoria</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="proveedorProducto" class="col-sm-3 col-form-label fw-bold gris-text">Proveedor</label>
+                <div class="col-sm-9">
+                    <select class="form-select border border-dark-subtle" aria-label="Default select example" name="proveedorProducto" id="proveedorProducto">
+                        <option selected>Seleccione el proveedor</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="fotoProducto" class="col-sm-3 col-form-label fw-bold gris-text">Foto Producto</label>
+                <div class="col-sm-9">
+                    <input class="form-control border border-dark-subtle" type="file" name="fotoProducto" id="fotoProducto">
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-danger">GRABAR</button>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            for (i = 0; i < dropdown.length; i++) {
+                dropdown[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var dropdownContent = this.nextElementSibling;
+                    if (dropdownContent.style.display === "block") {
+                        dropdownContent.style.display = "none";
+                    } else {
+                        dropdownContent.style.display = "block";
+                    }
+                });
+            }
+        </script>
+</body>
+
+</html>
