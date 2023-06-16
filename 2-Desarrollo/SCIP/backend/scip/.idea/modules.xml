@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/inventario.iml" filepath="$PROJECT_DIR$/inventario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SCIP_Malibu.iml" filepath="$PROJECT_DIR$/SCIP_Malibu.iml" />
     </modules>
   </component>
 </project>
