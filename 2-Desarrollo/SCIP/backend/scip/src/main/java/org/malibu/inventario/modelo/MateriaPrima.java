@@ -19,10 +19,8 @@ public class MateriaPrima {
     @Required
     String descripcion;
 
-
     @ManyToOne(fetch = FetchType.LAZY, optional = true)
     @DescriptionsList
     Proveedor nombreProveedorDescripcion;
-
 
 }
