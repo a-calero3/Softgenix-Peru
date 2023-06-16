@@ -1,0 +1,9 @@
+org\malibu\inventario\modelo\Category.class
+org\malibu\inventario\modelo\Producto.class
+org\malibu\inventario\modelo\Cliente.class
+org\malibu\inventario\run\inventario.class
+org\malibu\inventario\mapeo\Test.class
+org\malibu\inventario\mapeo\Cliente.class
+org\malibu\inventario\modelo\Proveedor.class
+org\malibu\inventario\modelo\MateriaPrima.class
+org\malibu\inventario\modelo\Direccion.class
