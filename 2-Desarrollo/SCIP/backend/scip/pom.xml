@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.malibu</groupId>
-	<artifactId>inventario</artifactId>
+	<artifactId>SCIP_Malibu</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -21,43 +21,38 @@
 			<artifactId>openxava</artifactId>
 			<version>${openxava.version}</version>
 		</dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
-            <version>2.6.10-SNAPSHOT</version>
-        </dependency>
 
-        <!--
-        Para acceder a tu base de datos descomenta la entrada correspondiente
-        de las dependencias de abajo. Si no encuentras la tuya, busca en
-        internet por la dependencia maven para tu base de datos y añádela
-        aquí tu mismo.
-        -->
-		
-		<!-- MySQL 
+		<!--
+		Para acceder a tu base de datos descomenta la entrada correspondiente
+		de las dependencias de abajo. Si no encuentras la tuya, busca en
+		internet por la dependencia maven para tu base de datos y añádela
+		aquí tu mismo.
+		-->
+
+		<!-- BASE DE DATOS A USAR MYSQL-->
 		<dependency>
 			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>		
-    		<version>8.0.32</version>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.32</version>
 		</dependency>
-		-->
-		
-		<!-- PostgreSQL 
+
+
+		<!-- PostgreSQL
 		<dependency>
 			<groupId>org.postgresql</groupId>
     		<artifactId>postgresql</artifactId>
     		<version>42.5.4</version>
 		</dependency>
 		-->
-		
-		<!-- Oracle 
+
+		<!-- Oracle
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
 			<version>21.9.0.0</version>
 		</dependency>
 		-->
-		
+
 		<!-- AS/400
 		<dependency>
 			<groupId>net.sf.jt400</groupId>
@@ -66,7 +61,7 @@
 			<classifier>jt400_jdk8</classifier>
 		</dependency>
 		-->
-		
+
 		<!-- Microsoft SQL Server
 		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
@@ -74,7 +69,7 @@
     		<version>12.2.0.jre8</version>
 		</dependency>
 		-->
-		
+
 		<!-- Informix
 		<dependency>
 			<groupId>com.ibm.informix</groupId>
@@ -82,7 +77,7 @@
 			<version>4.50.9</version>
 		</dependency>
 		-->
-		
+
 		<!-- Db2
 		<dependency>
 			<groupId>com.ibm.db2</groupId>
@@ -90,7 +85,7 @@
 			<version>11.5.8.0</version>
 		</dependency>
 		-->
-		
+
 		<!-- Firebird
 		<dependency>
 			<groupId>org.firebirdsql.jdbc</groupId>
@@ -98,7 +93,7 @@
 			<version>5.0.1.java8</version>
 		</dependency>
 		-->
-		
+
 	</dependencies>
 
 	<build>
