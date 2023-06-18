@@ -1,3 +1,50 @@
-id_rol,nombre_rol
-1,empleado
-2,administrador
+id_usuario,nombre_usuario,correo_electronico,contrasena
+100,"Juan Perez",juan.perez@gmail.com,1000
+101,"Elena Sanchez",elena.sanchez@hotmail.com,1001
+102,"Mario Quispe",mario.quispe@yahoo.es,1002
+103,"Cristhina Cristalina",cristhina.cristalina@gmail.com,1003
+104,"Carmen Anaya",carmen.anaya@gmail.com,1004
+105,"Pedro Alto",pedro.alto@gmail.com,1005
+106,"Henry Saavedra",henry.saavedra@gmail.com,1006
+107,"Peter Gonzales",peter.gonzales@gmail.com,1007
+108,"Leonardo Condor",leonardo.condor@gmail.com,1008
+109,"Ximena Dias",ximena.dias@gmail.com,1009
+110,"Otomiliano Primero",oto.primero@yahoo.es,1010
+111,"Mariano Quispe",mariano.quispe@yahoo.es,1011
+112,"Jenny Lopez",jenny.perez@yahoo.es,1012
+113,"Alan Perez",alan.perez@hotmail.com,1013
+114,"Alicia Maravilla",alicia.maravilla@yahoo.es,1014
+115,"Andrea Villanueva",andrea.villanueva@yahoo.es,1015
+116,"Josefina Bedia",josefina.bedia@yahoo.es,1016
+117,"Julia Gomez",julia.gomez@yahoo.es,1017
+118,"Nicolas Alejandro",nicolas.alejandro@yahoo.es,1018
+119,"Mickey Perez",mickey.perez@yahoo.es,1019
+120,"Martín Collado",martin.collado@gmail.com,1020
+121,"Argon Hierro",argon.hierro@gmail.com,1021
+122,"Dolly Zapata",dolly.zapata@gmail.com,1022
+123,"Paula Roma",paula.ramo@gmail.com,1023
+124,"Marcos Samina",marcos.samina@gmail.com,1024
+125,"Marte Saturno",marte.saturno@gmail.com,1025
+126,"Victor Rubio",victor.rubio@gmail.com,1026
+127,"Camila Jimenez",camila.jimenez@hotmail.com,1027
+128,"Mónica Gonzales",monica.gonzales@hotmail.com,1028
+129,"Julio Ancaya","julio ancaya@hotmail.com",1029
+130,"Sebastian Cabanillas",sebastian.cabanillas@hotmail.com,1030
+131,"Gonzalo Azulino",gonzalo.azulino@gmail.com,1031
+132,"Pedro Díaz",pedro.diaz@outlook.com,1032
+133,"Gianfranco Quispe",gianfranco.quispe@outlook.com,1033
+134,"Juan Maldini",juan.maldini@outlook.com,1034
+135,"Felipe Feliciano",felipe.feliciano@outlook.com,1035
+136,"José Torres",jose.torres@outlook.com,1036
+137,"Luis Ortega",luis.ortega@outlook.com,1037
+138,"Sofía Delgado",sofia.delgado@outlook.com,1038
+139,"Zoe Castro",zoe.castro@outlook.com,1039
+140,"Oscar Linares",oscar.linares@outlook.com,1040
+142,"Laura Mendoza",laura.mendoza@hotmail.com,1042
+143,"Raúl Flores",raul.flores@hotmail.com,1043
+144,"Sandra Delgado",sandra.delgado@hotmail.com,1044
+145,"Yolanda Mendoza",yolanda.mendoza@hotmail.com,1045
+146,"Patrica Vega",patricia.vega@hotmail.com,1046
+147,"Daniel Ruiz",daniel.ruiz@hotmail.com,1047
+148,"Gabriela Navarro",gabriela.navarro@hotmail.com,1048
+149,"Mario Silvia",mario.silvio@hotmail.com,1049
