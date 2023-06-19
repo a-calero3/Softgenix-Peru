@@ -1,51 +1,51 @@
-id_usuario,nombre_usuario,correo_electronico,contrasena
-100,"Juan Perez",juan.perez@gmail.com,1000
-101,"Elena Sanchez",elena.sanchez@hotmail.com,1001
-102,"Mario Quispe",mario.quispe@yahoo.es,1002
-103,"Cristhina Cristalina",cristhina.cristalina@gmail.com,1003
-104,"Carmen Anaya",carmen.anaya@gmail.com,1004
-105,"Pedro Alto",pedro.alto@gmail.com,1005
-106,"Henry Saavedra",henry.saavedra@gmail.com,1006
-107,"Peter Gonzales",peter.gonzales@gmail.com,1007
-108,"Leonardo Condor",leonardo.condor@gmail.com,1008
-109,"Ximena Dias",ximena.dias@gmail.com,1009
-110,"Otomiliano Primero",oto.primero@yahoo.es,1010
-111,"Mariano Quispe",mariano.quispe@yahoo.es,1011
-112,"Jenny Lopez",jenny.perez@yahoo.es,1012
-113,"Alan Perez",alan.perez@hotmail.com,1013
-114,"Alicia Maravilla",alicia.maravilla@yahoo.es,1014
-115,"Andrea Villanueva",andrea.villanueva@yahoo.es,1015
-116,"Josefina Bedia",josefina.bedia@yahoo.es,1016
-117,"Julia Gomez",julia.gomez@yahoo.es,1017
-118,"Nicolas Alejandro",nicolas.alejandro@yahoo.es,1018
-119,"Mickey Perez",mickey.perez@yahoo.es,1019
-120,"Martín Collado",martin.collado@gmail.com,1020
-121,"Argon Hierro",argon.hierro@gmail.com,1021
-122,"Dolly Zapata",dolly.zapata@gmail.com,1022
-123,"Paula Roma",paula.ramo@gmail.com,1023
-124,"Marcos Samina",marcos.samina@gmail.com,1024
-125,"Marte Saturno",marte.saturno@gmail.com,1025
-126,"Victor Rubio",victor.rubio@gmail.com,1026
-127,"Camila Jimenez",camila.jimenez@hotmail.com,1027
-128,"Mónica Gonzales",monica.gonzales@hotmail.com,1028
-129,"Julio Ancaya","julio ancaya@hotmail.com",1029
-130,"Sebastian Cabanillas",sebastian.cabanillas@hotmail.com,1030
-131,"Gonzalo Azulino",gonzalo.azulino@gmail.com,1031
-132,"Pedro Díaz",pedro.diaz@outlook.com,1032
-133,"Gianfranco Quispe",gianfranco.quispe@outlook.com,1033
-134,"Juan Maldini",juan.maldini@outlook.com,1034
-135,"Felipe Feliciano",felipe.feliciano@outlook.com,1035
-136,"José Torres",jose.torres@outlook.com,1036
-137,"Luis Ortega",luis.ortega@outlook.com,1037
-138,"Sofía Delgado",sofia.delgado@outlook.com,1038
-139,"Zoe Castro",zoe.castro@outlook.com,1039
-140,"Oscar Linares",oscar.linares@outlook.com,1040
-141,"Juan Jimenez",juan.jimenez@yahoo.es,1141
-142,"Laura Mendoza",laura.mendoza@hotmail.com,1042
-143,"Raúl Flores",raul.flores@hotmail.com,1043
-144,"Sandra Delgado",sandra.delgado@hotmail.com,1044
-145,"Yolanda Mendoza",yolanda.mendoza@hotmail.com,1045
-146,"Patrica Vega",patricia.vega@hotmail.com,1046
-147,"Daniel Ruiz",daniel.ruiz@hotmail.com,1047
-148,"Gabriela Navarro",gabriela.navarro@hotmail.com,1048
-149,"Jose Paredes",mario.silvio@hotmail.com,1049
+id_reporte_inventario,fecha,id_usuario
+1,2023-01-01,100
+2,2023-01-02,101
+3,2023-01-03,102
+4,2023-01-04,103
+5,2023-01-05,104
+6,2023-01-06,105
+7,2023-01-07,106
+8,2023-01-08,107
+9,2023-01-09,108
+10,2023-01-10,109
+11,2023-01-11,110
+12,2023-01-12,111
+13,2023-01-13,112
+14,2023-01-14,113
+15,2023-01-15,114
+16,2023-01-16,115
+17,2023-01-17,116
+18,2023-01-18,117
+19,2023-01-19,118
+20,2023-01-20,119
+21,2023-01-11,120
+22,2023-01-21,121
+23,2023-01-22,122
+24,2023-01-23,123
+25,2023-01-24,124
+26,2023-01-25,125
+27,2023-01-26,126
+28,2023-01-27,127
+29,2023-01-28,128
+30,2023-01-29,129
+31,2023-01-30,130
+32,2023-01-31,131
+33,2023-02-01,132
+34,2023-02-02,133
+35,2023-02-03,134
+36,2023-02-04,135
+37,2023-02-05,136
+38,2023-02-06,137
+39,2023-02-07,138
+40,2023-02-08,139
+41,2023-02-09,140
+42,2023-02-10,141
+43,2023-02-11,142
+44,2023-02-12,143
+45,2023-02-13,144
+46,2023-02-14,145
+47,2023-02-15,146
+48,2023-02-16,147
+49,2023-02-17,148
+50,2023-02-18,149
