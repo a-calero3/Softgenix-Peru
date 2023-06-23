@@ -4,20 +4,20 @@ package org.malibu.inventario.mapeo;
 import java.util.List;
 import java.util.Scanner;
 
-public class Cliente {
+public class Usuario {
 
     static Scanner in = new Scanner(System.in);
     private int dni;
     private String nombre;
     Direccion direccion;
 
-    public Cliente() {}
-    public Cliente(int dni, String nombre) {
+    public Usuario() {}
+    public Usuario(int dni, String nombre) {
         this.dni = dni;
         this.nombre = nombre;
     }
 
-    public Cliente(int dni, String nombre, Direccion direccion) {
+    public Usuario(int dni, String nombre, Direccion direccion) {
         this.dni = dni;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -39,39 +39,39 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public void createClientes(List<Cliente>p){
+    public void createClientes(List<Usuario>p){
         System.out.print("Ingrese DNI :");
         int dni = in.nextInt();
         System.out.print("Ingrese nombre :");
         String nombre = in.next();
-        Cliente cli = new Cliente(dni,nombre);
+        Usuario cli = new Usuario(dni,nombre);
         p.add(cli);
         System.out.println("REGISTRO COMPLETADO");
                                               }
-    public void readClientes(List<Cliente> p){
+    public void readClientes(List<Usuario> p){
         p.stream().map(s->s.getDni()+"\t"+s.getNombre()).forEach(System.out::println);
                                                 }
 
-    public void updateClientes(List<Cliente>p){
+    public void updateClientes(List<Usuario>p){
         System.out.print("Escoja el cliente a actualizar :");
         int indice = in.nextInt();
         System.out.print("Ingrese nuevo DNI :");
         int dni = in.nextInt();
         System.out.print("Ingrese nuevo NOMBRE :");
         String nombre = in.next();
-        Cliente cli = new Cliente(dni,nombre);
+        Usuario cli = new Usuario(dni,nombre);
         p.set(indice-1,cli);
         System.out.println("ACTUALIZACION COMPLETA");
                                                             }
 
-    public void deleteClientes(List<Cliente>p){
+    public void deleteClientes(List<Usuario>p){
         System.out.print("Escoja el cliente a eliminar :");
         int indice = in.nextInt();
         p.remove(indice-1);
         System.out.println("ELIMINACION COMPLETA");
                                                           }
 
-    public void runCliente(List<Cliente>p){
+    public void runCliente(List<Usuario>p){
         int opc;
         System.out.println("===OPCIONES===");
         System.out.println("1)CREAR CLIENTE");
