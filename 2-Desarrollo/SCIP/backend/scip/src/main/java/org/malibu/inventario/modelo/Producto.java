@@ -3,6 +3,7 @@ package org.malibu.inventario.modelo;
 import java.math.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.PositiveOrZero;
 
 import org.apache.commons.io.FilenameUtils;
@@ -40,6 +41,7 @@ public class Producto {
 
 
     @TextArea
+    @Pattern(regexp = "^[a-zA-Z]+([\\s\\-][a-zA-Z]+)*$", message = "Las observaciones solo debe contener letras y espacios")
     String observaciones;
 
 }
