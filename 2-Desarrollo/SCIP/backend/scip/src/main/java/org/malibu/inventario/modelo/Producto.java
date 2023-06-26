@@ -3,7 +3,10 @@ package org.malibu.inventario.modelo;
 import java.math.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.PositiveOrZero;
 
+import org.apache.commons.io.FilenameUtils;
 import org.openxava.annotations.*;
 
 import lombok.*;
@@ -21,6 +24,7 @@ public class Producto {
     String descripcion;
 
     @Column(length = 9)
+    @PositiveOrZero
     int stock;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = true)
@@ -28,13 +32,16 @@ public class Producto {
     Category nombreCategoriaDescripcion;
 
     @Money
+    @PositiveOrZero
     BigDecimal precio;
 
-    @Files
+    @File
     @Column(length = 32)
     String fotos;
 
+
     @TextArea
+    @Pattern(regexp = "^[a-zA-Z]+([\\s\\-][a-zA-Z]+)*$", message = "Las observaciones solo debe contener letras y espacios")
     String observaciones;
 
 }

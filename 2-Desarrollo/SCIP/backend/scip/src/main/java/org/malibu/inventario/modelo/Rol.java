@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 import org.openxava.annotations.Hidden;
+import org.openxava.annotations.ReadOnly;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,8 +12,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-@Getter
-@Setter
 
 public class Rol {
 
@@ -25,4 +24,21 @@ public class Rol {
 
     @Column(length = 50)
     String descripcion;
+
+    public String getOid() {
+        return oid;
+    }
+
+    public void setOid(String oid) {
+        this.oid = oid;
+    }
+    @ReadOnly
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    @ReadOnly
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }

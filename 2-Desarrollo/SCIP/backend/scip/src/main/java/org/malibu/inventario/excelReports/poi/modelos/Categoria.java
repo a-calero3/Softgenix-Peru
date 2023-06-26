@@ -5,10 +5,9 @@ import java.math.BigDecimal;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 
-@Entity
+
 public class Categoria {
-	@javax.persistence.Id
-	@GeneratedValue
+
 	private Long id;
 	private String description;
 	private BigDecimal price;
