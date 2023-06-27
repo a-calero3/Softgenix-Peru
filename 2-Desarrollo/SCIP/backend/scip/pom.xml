@@ -16,6 +16,8 @@
 	</properties>
 
 	<dependencies>
+
+
 		<dependency>
 			<groupId>org.openxava</groupId>
 			<artifactId>openxava</artifactId>
@@ -48,6 +50,7 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>6.2.0.Final</version>
 		</dependency>
+
 
 		<!--
 		Para acceder a tu base de datos descomenta la entrada correspondiente
