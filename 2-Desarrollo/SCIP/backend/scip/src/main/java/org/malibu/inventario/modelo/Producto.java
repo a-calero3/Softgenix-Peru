@@ -3,10 +3,11 @@ package org.malibu.inventario.modelo;
 import java.math.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.PositiveOrZero;
+import org.malibu.inventario.ValidacionEntradas.ValidFileExtension;
 
-import org.apache.commons.io.FilenameUtils;
 import org.openxava.annotations.*;
 
 import lombok.*;
@@ -31,12 +32,14 @@ public class Producto {
     @DescriptionsList
     Category nombreCategoriaDescripcion;
 
+
     @Money
     @PositiveOrZero
     BigDecimal precio;
 
     @File
     @Column(length = 32)
+    @ValidFileExtension(allowedExtensions = {".jpg"})
     String fotos;
 
 

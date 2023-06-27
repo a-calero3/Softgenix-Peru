@@ -2,6 +2,7 @@ package org.malibu.inventario.modelo;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 import org.openxava.annotations.*;
 
@@ -17,6 +18,7 @@ public class MateriaPrima {
 
     @Column(length = 50)
     @Required
+    @NotEmpty
     String descripcion;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = true)

@@ -3,6 +3,7 @@ package org.malibu.inventario.modelo;
 
 import javax.persistence.*;
 import javax.persistence.Entity;
+import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
@@ -18,6 +19,7 @@ public class Proveedor {
     int codigo; // Cambia el nombre del atributo
 
     @Column(length = 50)
+    @NotEmpty
     String descripcion;
 
 }
