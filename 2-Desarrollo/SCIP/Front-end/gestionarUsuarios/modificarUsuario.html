@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrar Usuarios</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header class="col p-12">
+    <ul class="nav justify-content-end">
+        <li class="nav-item barra">
+            <a class="nav-link" href="../Login/Login.html">Cerrar Sesión (Administrador)</a>
+        </li>
+    </ul>
+</header>
+
+<body>
+    <div class="sidenav">
+        <a class="fw-bold" href="#inventario">INVENTARIO</a>
+        <br>
+        <a href="administrarUsuarios.html">Usuarios</a>
+        <button class="dropdown-btn">Productos 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../administrarProductos/administrarProductos.html">Administrar Productos</a>
+            <a href="../buscarProducto/buscarProducto.html">Buscar Producto</a>
+            <a href="#alertasStock">Alertas de Stock</a>
+            <a href="#listaProductos">Lista de Productos</a>
+        </div>
+        <button class="dropdown-btn">Reportes 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../generarReporteInventario/generarReporteInventarioForm.html">Generar Reporte</a>
+            <a href="#reporteGrafico">Reporte Gráfico</a>
+            <a href="#historialReporte">Historial de Reportes</a>
+        </div>
+        <a href="#proveedores">Proveedores</a>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary barranav" style="background-color: #d9d9d9;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="administrarUsuarios.html"><i class="fa fa-chevron-left"></i> Lista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="nuevoUsuario.html"><i class="fa fa-plus-square-o"></i> Nuevo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-cloud-upload"></i> Grabar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-refresh"></i> Refrescar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-trash"></i> Eliminar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+
+
+        <h2 class="gris-text">Modificar Usuario</h2>
+        <br>
+        <form class="col-sm-6">
+            <div class="row mb-3">
+                <label for="nroDni" class="col-sm-3 col-form-label fw-bold gris-text">Numero DNI</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control border border-dark-subtle" name="nroDni" id="nroDni" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="nombres" class="col-sm-3 col-form-label fw-bold gris-text">Nombres</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control border border-dark-subtle" name="nombres" id="nombres" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="apellidos" class="col-sm-3 col-form-label fw-bold gris-text">Apellidos</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control border border-dark-subtle" name="apellidos" id="apellidos" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="fechaN" class="col-sm-3 col-form-label fw-bold gris-text">Fecha Nacimiento</label>
+                <div class="col-sm-5">
+                    <input type="date" class="form-control border border-dark-subtle" name="fechaN" id="fechaN" required>
+                </div>
+            </div>
+            <br>
+            <h5 class="gris-text">Direccion</h5>
+            <hr>
+            <div class="row mb-3">
+                <label for="urbanizacion" class="col-sm-3 col-form-label fw-bold gris-text">Urbanizacion</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control border border-dark-subtle" name="urbanizacion" id="urbanizacion" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="manzana" class="col-sm-3 col-form-label fw-bold gris-text">manzana</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control border border-dark-subtle" name="manzana" id="manzana" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Lote" class="col-sm-3 col-form-label fw-bold gris-text">Lote</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control border border-dark-subtle" name="Lote" id="Lote" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Distrito" class="col-sm-3 col-form-label fw-bold gris-text">Distrito</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control border border-dark-subtle" name="Distrito" id="Distrito" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="Provincia" class="col-sm-3 col-form-label fw-bold gris-text">Provincia</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control border border-dark-subtle" name="Provincia" id="Provincia" required>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row mb-3">
+                <label for="rolDescripcion" class="col-sm-3 col-form-label fw-bold gris-text">Rol Descripcion</label>
+                <div class="col-sm-6">
+                    <select class="form-select border border-dark-subtle" aria-label="Default select example" name="rolDescripcion" id="rolDescripcion">
+                        <option selected>Seleccione Rol</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-danger">GRABAR</button>
+        </form>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
